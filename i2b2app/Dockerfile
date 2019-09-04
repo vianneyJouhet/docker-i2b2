@@ -12,7 +12,7 @@ ADD ./ressources/ont-ds.xml.template /opt/ressources/ont-ds.xml
 WORKDIR /opt/deploy/
 RUN ls
 ADD ./lib/postgresql-42.1.4.jar /opt/jboss/wildfly/standalone/deployments/postgresql-42.1.4.jar
-RUN wget https://maven.xwiki.org/externals/com/oracle/jdbc/ojdbc8/12.2.0.1/ojdbc8-12.2.0.1.jar
+ADD ./lib/ojdbc8.jar /opt/jboss/wildfly/standalone/deployments/ojdbc8.jar
 
 ADD ./lib/xmlstarlet-1.6.1-1.el7.x86_64.rpm /opt/deploy/xmlstarlet.rpm
 RUN rpm -ivh xmlstarlet.rpm
