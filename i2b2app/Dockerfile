@@ -12,6 +12,8 @@ ADD ./ressources/ont-ds.xml.template /opt/ressources/ont-ds.xml
 WORKDIR /opt/deploy/
 RUN ls
 ADD ./lib/postgresql-42.1.4.jar /opt/jboss/wildfly/standalone/deployments/postgresql-42.1.4.jar
+RUN wget https://maven.xwiki.org/externals/com/oracle/jdbc/ojdbc8/12.2.0.1/ojdbc8-12.2.0.1.jar
+RUN mv ojdbc8-12.2.0.1.jar /opt/jboss/wildfly/standalone/deployments/ojdbc8.jar
 ADD ./lib/xmlstarlet-1.6.1-1.el7.x86_64.rpm /opt/deploy/xmlstarlet.rpm
 RUN rpm -ivh xmlstarlet.rpm
 
@@ -21,6 +23,7 @@ RUN unzip ant.zip -d /opt \
 
 ADD ./lib/axis2-1.7.1-war.zip /opt/deploy/axis2-war.zip
 RUN unzip -o /opt/deploy/axis2-war.zip
+
 
 WORKDIR /opt/deploy/
 
