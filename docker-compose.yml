@@ -1,0 +1,28 @@
+# Use postgres/example user/password credentials
+version: "3.1"
+
+services:
+
+    i2b2app:
+       build: ./i2b2app
+       restart: on-failure
+       # ports:
+       #    - 8080:8080
+       environment:
+         SECRETS: /run/secrets/secrets
+       secrets:
+         - secrets
+
+    webserver:
+        build: ./webserver
+        restart: on-failure
+        ports:
+           - 80:80
+        environment:
+          SECRETS: /run/secrets/secrets
+        secrets:
+          - secrets
+
+secrets:
+  secrets:
+    file: secrets.txt
