@@ -5,7 +5,12 @@ USER root
 RUN mkdir /opt/deploy
 
 ADD ./ressources/i2b2core-src.zip /opt/deploy/i2b2core-src.zip
-RUN unzip -o /opt/deploy/i2b2core-src.zip -d /opt/deploy/
+RUN DIRNAME=$(unzip -Z -1 /opt/deploy/i2b2core-src.zip | head -1) \
+  && unzip -o /opt/deploy/i2b2core-src.zip -d /opt/deploy/ \
+	&& mv /opt/deploy/$DIRNAME/ /opt/deploy/i2b2core-src/
+
+RUN ls /opt/deploy/i2b2core-src/*
+
 ADD ./ressources/ont-ds.xml.template /opt/ressources/ont-ds.xml
 
 
