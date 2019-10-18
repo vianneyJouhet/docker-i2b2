@@ -13,7 +13,7 @@ This app needs to have an i2b2 database up and running you will have to give all
  * mov the zip wile to ./webserver/webclient/
  * rename the zip file as i2b2webclient.zip
 
-### Download the i2b2 data
+### Download the i2b2 app sources
  * download the release of the webclient you want
  * mov the zip wile to ./i2b2app/ressources/
  * rename the zip file as i2b2core-src.zip
