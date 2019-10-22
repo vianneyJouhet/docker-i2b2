@@ -37,5 +37,5 @@ The webservers exposes on port 80. You can connect using the credientials for yo
 
 ## Buld database Load i2b2 example data
 ```bash
-sh setDemodata.sh
+sh setDemoData.sh
 ```
