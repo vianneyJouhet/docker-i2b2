@@ -8,6 +8,9 @@ This app needs to have an i2b2 database up and running you will have to give all
 
  * Clone the repository
 
+## Get i2b2 source
+Source files can be found at [https://community.i2b2.org/wiki/display/i2b2/i2b2+Software](https://community.i2b2.org/wiki/display/i2b2/i2b2+Software)
+
 ### Download the webclient sources
  * download the release of the webclient you want
  * mov the zip wile to ./webserver/webclient/
@@ -18,7 +21,7 @@ This app needs to have an i2b2 database up and running you will have to give all
  * mov the zip wile to ./i2b2app/ressources/
  * rename the zip file as i2b2core-src.zip
 
-### Download the i2b2 app sources
+### Download the i2b2 data examples
   * download the release of the i2b2data you want
   * mov the zip wile to ./i2b2data/
   * rename the zip file as i2b2createdb.zip
