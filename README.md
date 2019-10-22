@@ -2,7 +2,7 @@
 docker-compose i2b2app, db and webserver deployment
 
 ## pre requisits
-This app needs to have an i2b2 database up and running you will have to give all the credentials for this i2b2 database
+This branch is embedding an i2b2 database up and running you will have to give all the credentials for this i2b2 database. There is specific scripts for laoding those data.
 
 ## deployment
 
@@ -33,3 +33,9 @@ Source files can be found at [https://community.i2b2.org/wiki/display/i2b2/i2b2+
 
 
 The webservers exposes on port 80. You can connect using the credientials for your i2b2 users (on the existing database instance)
+
+
+## Buld database Load i2b2 example data
+```bash
+sh setDemodata.sh
+```
