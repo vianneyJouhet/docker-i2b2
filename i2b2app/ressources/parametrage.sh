@@ -26,7 +26,7 @@ cd $ROOTDIRECTORY
 #unzip  -o $ROOTDIRECTORY/i2b2.zip -d $ROOTDIRECTORY/
 i2b2_SOURCE=$ROOTDIRECTORY/$i2b2_SOURCE_DIR_NAME
 
-echo 'repertoire i2b2 ==> ' $i2b2_source
+echo 'repertoire i2b2 ==> ' $i2b2_SOURCE
 #/$i2b2_SOURCE_DIR_NAME
 
 
