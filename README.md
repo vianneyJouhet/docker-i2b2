@@ -17,7 +17,7 @@ Source files can be found at [https://community.i2b2.org/wiki/display/i2b2/i2b2+
  * rename the zip file as i2b2webclient.zip
 
 ### Download the i2b2 app sources
- * download the release of the webclient you want
+ * download the release of the core server you want
  * mov the zip wile to ./i2b2app/ressources/
  * rename the zip file as i2b2core-src.zip
 
