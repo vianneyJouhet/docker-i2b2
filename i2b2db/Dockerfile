@@ -1,4 +1,4 @@
-FROM library/postgres
+FROM library/postgres:12.2
 
 # ENV POSTGRES_DB=$POSTGRES_DB
 # ENV POSTGRES_USER=$POSTGRES_USER
