@@ -5,7 +5,7 @@ services:
 
     i2b2app:
        build: ./i2b2app
-       restart: never
+       restart: on-failure
        environment:
          SECRETS: /run/secrets/secrets
        secrets:
@@ -13,7 +13,7 @@ services:
 
     webserver:
         build: ./webserver
-        restart: never
+        restart:  on-failure
         ports:
            - 80:80
         environment:
@@ -23,7 +23,7 @@ services:
 
     i2b2db:
         build: ./i2b2db
-        restart: never
+        restart:  on-failure
         ports:
           - 127.0.0.1:5432:5432
         environment:
@@ -33,7 +33,7 @@ services:
 
     pgadmin:
         image: thajeztah/pgadmin4
-        restart: never
+        restart:  on-failure
         ports:
           - 127.0.0.1:5050:5050
 
